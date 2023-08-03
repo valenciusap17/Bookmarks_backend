@@ -32,6 +32,19 @@
 $ npm install
 ```
 
+## Dealing with database using docker
+
+```bash
+# activate your docker desktop
+$ open docker desktop
+
+# start db with docker compose
+$ npm run db:dev:restart
+
+# deleting container after used
+$ npm run db:dev:rm
+```
+
 ## Running the app
 
 ```bash
@@ -48,14 +61,11 @@ $ npm run start:prod
 ## Test
 
 ```bash
-# unit tests
-$ npm run test
-
-# e2e tests
+# run e2e tests with starting your db for test purpose
 $ npm run test:e2e
 
-# test coverage
-$ npm run test:cov
+# deleting db test docker container when done
+$ npm run db:test:rm
 ```
 
 ## Support
